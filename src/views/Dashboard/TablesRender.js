@@ -31,7 +31,6 @@ import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
 //import { bugs, website, server } from "variables/general.js";
-
 import {
   creditoFovisste,
   seguroFovisste
@@ -84,7 +83,7 @@ round = (num, decimales = 2)=>{
 obtenerQ=async(idUsuario,idQuincena)=>{
     try {
 
-       // const sendUri = "http://35.222.167.128:3015/";
+      // const sendUri = "http://34.66.54.10:3015/";
         const sendUri = "http://localhost:3015/";
         //const sendUri = "http://192.168.1.74:3015/";
         const bodyJSON = {
@@ -338,7 +337,7 @@ render() {
         */}
       </GridContainer>
       <GridContainer>
-        <GridItem xs={12} sm={12} md={6}>
+        <GridItem xs={12} sm={12} md={12}>
           <Card chart>
             <CardHeader color="success">
               <ChartistGraph
@@ -365,7 +364,9 @@ render() {
             </CardFooter>
           </Card>
         </GridItem>
-        <GridItem xs={12} sm={12} md={6}>
+        </GridContainer>
+        <GridContainer>
+        <GridItem xs={12} sm={12} md={12}>
           <Card chart>
             <CardHeader color="danger">
               <ChartistGraph
